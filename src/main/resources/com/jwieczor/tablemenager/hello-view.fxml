@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar layoutY="7.0" prefHeight="28.0" prefWidth="576.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Rezerwacje">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Dodaj" />
+                  <MenuItem mnemonicParsing="false" text="Znajdź" />
+                  <MenuItem mnemonicParsing="false" text="Tabelka" />
+                  <MenuItem mnemonicParsing="false" text="Wydruk" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help" />
+        </menus>
+      </MenuBar>
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="-12.0" layoutY="35.0" prefHeight="83.0" prefWidth="600.0" text="Witam!">
+         <font>
+            <Font name="Mali Light" size="38.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="273.0" fitWidth="456.0" layoutX="95.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@photos/taras_home.jpeg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
