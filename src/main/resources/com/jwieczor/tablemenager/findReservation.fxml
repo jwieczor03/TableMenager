@@ -2,13 +2,15 @@
 
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jwieczor.tablemenager.FindReservation">
    <children>
       <DatePicker layoutX="207.0" layoutY="37.0" />
       <TextField layoutX="207.0" layoutY="88.0" prefHeight="26.0" prefWidth="186.0" />
@@ -26,5 +28,25 @@
             <TableColumn prefWidth="75.0" text="Ilosc gości" />
         </columns>
       </TableView>
+      <MenuBar prefHeight="28.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Rezerwacje">
+            <items>
+              <MenuItem fx:id="addReservationMenu" mnemonicParsing="false" onAction="#addMenuBar" text="Dodaj" />
+                  <MenuItem fx:id="findReservationMenu" mnemonicParsing="false" onAction="#findMenuBar" text="Znajdź" />
+                  <MenuItem fx:id="tableMenu" mnemonicParsing="false" onAction="#tableMenuBar" text="Tabelka" />
+                  <MenuItem fx:id="printMenu" mnemonicParsing="false" onAction="#printMenuBar" text="Wydruk" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="HOME">
+               <items>
+                  <MenuItem fx:id="homeMenuButt" mnemonicParsing="false" onAction="#HomeMenuBar" text="Wróć" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem fx:id="helpMenuButt" mnemonicParsing="false" onAction="#helpMenuBar" text="POMOC" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
    </children>
 </AnchorPane>

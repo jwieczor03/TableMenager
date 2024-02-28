@@ -4,7 +4,7 @@ import javafx.event.ActionEvent;
 
 import java.io.IOException;
 
-public class FindReservation extends MenuBarController{
+public class TableController extends MenuBarController{
 
     @Override
     public void addMenuBar(ActionEvent event) throws IOException {

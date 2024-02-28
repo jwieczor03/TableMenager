@@ -1,14 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.jwieczor.tablemenager.AddReservation"
-            prefHeight="400.0" prefWidth="600.0">
-
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jwieczor.tablemenager.AddReservation">
+   <children>
+      <MenuBar prefHeight="28.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Rezerwacje">
+            <items>
+                  <MenuItem fx:id="addReservationMenu" mnemonicParsing="false" onAction="#addMenuBar" text="Dodaj" />
+                  <MenuItem fx:id="findReservationMenu" mnemonicParsing="false" onAction="#findMenuBar" text="Znajdź" />
+              <MenuItem fx:id="tableReservationMenu" mnemonicParsing="false" onAction="#tableMenuBar" text="Tabelka" />
+                  <MenuItem fx:id="printReservationMenu" mnemonicParsing="false" onAction="#printMenuBar" text="Wydruk" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="HOME">
+               <items>
+                  <MenuItem fx:id="homeMenuButt" mnemonicParsing="false" onAction="#HomeMenuBar" text="Wróć" />
+               </items></Menu>
+          <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem fx:id="helpMenuButt" mnemonicParsing="false" onAction="#helpMenuBar" text="POMOC" />
+               </items></Menu>
+        </menus>
+      </MenuBar>
+      <DatePicker layoutX="162.0" layoutY="74.0" />
+      <TextField layoutX="162.0" layoutY="121.0" prefHeight="26.0" prefWidth="186.0" />
+      <Button layoutX="410.0" layoutY="100.0" mnemonicParsing="false" text="Sprawdź dostępność" />
+      <Label alignment="CENTER" layoutX="3.0" layoutY="79.0" prefHeight="17.0" prefWidth="160.0" text="Wybierz date:" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="126.0" prefHeight="17.0" prefWidth="166.0" text="Ilosc gości:" />
+      <TableView layoutX="155.0" layoutY="180.0" prefHeight="200.0" prefWidth="200.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Godzina" />
+          <TableColumn prefWidth="75.0" text="Stolik" />
+        </columns>
+      </TableView>
+   </children>
 </AnchorPane>

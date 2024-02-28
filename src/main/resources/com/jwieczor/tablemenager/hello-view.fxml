@@ -9,28 +9,30 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="991.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jwieczor.tablemenager.MenuBarController">
    <children>
-      <MenuBar layoutY="7.0" prefHeight="28.0" prefWidth="576.0">
+      <MenuBar layoutY="7.0" prefHeight="28.0" prefWidth="1119.0">
         <menus>
           <Menu mnemonicParsing="false" text="Rezerwacje">
             <items>
-              <MenuItem mnemonicParsing="false" text="Dodaj" />
-                  <MenuItem mnemonicParsing="false" text="Znajdź" />
-                  <MenuItem mnemonicParsing="false" text="Tabelka" />
-                  <MenuItem mnemonicParsing="false" text="Wydruk" />
+              <MenuItem fx:id="AddButton" mnemonicParsing="false" onAction="#addMenuBar" text="Dodaj" />
+                  <MenuItem fx:id="findButton" mnemonicParsing="false" onAction="#findMenuBar" text="Znajdź" />
+                  <MenuItem fx:id="tableButton" mnemonicParsing="false" onAction="#tableMenuBar" text="Tabelka" />
+                  <MenuItem fx:id="printButton" mnemonicParsing="false" onAction="#printMenuBar" text="Wydruk" />
             </items>
           </Menu>
-          <Menu mnemonicParsing="false" text="Help" />
+          <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem fx:id="helpMenuButt" mnemonicParsing="false" onAction="#helpMenuBar" text="POMOC" />
+               </items></Menu>
         </menus>
       </MenuBar>
-      <Label alignment="CENTER" contentDisplay="TOP" layoutX="-12.0" layoutY="35.0" prefHeight="83.0" prefWidth="600.0" text="Witam!">
+      <Label alignment="CENTER" contentDisplay="TOP" layoutX="15.0" layoutY="34.0" prefHeight="273.0" prefWidth="1127.0" text="Witam!">
          <font>
-            <Font name="Mali Light" size="38.0" />
+            <Font name="Mali Light" size="96.0" />
          </font>
       </Label>
-      <ImageView fitHeight="273.0" fitWidth="456.0" layoutX="95.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="514.0" fitWidth="884.0" layoutX="193.0" layoutY="295.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@photos/taras_home.jpeg" />
          </image>
