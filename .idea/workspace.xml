@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="802f7927-83a9-4c49-9b39-2bfcb315bfac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jwieczor/tablemenager/HelpController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jwieczor/tablemenager/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jwieczor/tablemenager/MenuBarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jwieczor/tablemenager/TableController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/jwieczor/tablemenager/help.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/jwieczor/tablemenager/table.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jwieczor/tablemenager/AddReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jwieczor/tablemenager/AddReservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jwieczor/tablemenager/FindReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jwieczor/tablemenager/FindReservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jwieczor/tablemenager/HelloApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jwieczor/tablemenager/PrintReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jwieczor/tablemenager/PrintReservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/jwieczor/tablemenager/addReservation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/jwieczor/tablemenager/addReservation.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/jwieczor/tablemenager/findReservation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/jwieczor/tablemenager/findReservation.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/jwieczor/tablemenager/hello-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/jwieczor/tablemenager/hello-view.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/jwieczor/tablemenager/printReservation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/jwieczor/tablemenager/printReservation.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +73,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1708962552877</updated>
-      <workItem from="1708962554227" duration="14207000" />
+      <workItem from="1708962554227" duration="15455000" />
     </task>
     <servers />
   </component>
