@@ -8,7 +8,7 @@ public class DatabaseConnector {
     private static final String DRIVER_CLASS = "com.mysql.cj.jdbc.Driver";
     private static final String DATABASE_URL = "jdbc:mysql://mysql.wmi.amu.edu.pl:3306/s485704_tin";
     private static final String USERNAME = "s485704";
-    private static final String PASSWORD = "";
+    private static final String PASSWORD = "powiedz to imie";
 
     private static Connection connection;
 
