@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="802f7927-83a9-4c49-9b39-2bfcb315bfac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/jwieczor/tablemenager/Reservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2933284f-fd1b-45e5-a3e8-edcc670f4da7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2933284f-fd1b-45e5-a3e8-edcc670f4da7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/2933284f-fd1b-45e5-a3e8-edcc670f4da7/storage_v2/_src_/schema/s485704_tin.N-imJA.meta" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/2933284f-fd1b-45e5-a3e8-edcc670f4da7/storage_v2/_src_/schema/s485704_tin.N-imJA.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/jwieczor/tablemenager/AddReservation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jwieczor/tablemenager/AddReservation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jwieczor/tablemenager/DatabaseConnector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jwieczor/tablemenager/DatabaseConnector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/jwieczor/tablemenager/addReservation.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/jwieczor/tablemenager/addReservation.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +102,7 @@
       <updated>1708962552877</updated>
       <workItem from="1708962554227" duration="16314000" />
       <workItem from="1709642710087" duration="518000" />
-      <workItem from="1709643243605" duration="4178000" />
+      <workItem from="1709643243605" duration="7678000" />
     </task>
     <servers />
   </component>

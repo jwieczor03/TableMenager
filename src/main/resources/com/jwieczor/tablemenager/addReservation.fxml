@@ -6,14 +6,14 @@
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TableColumn?>
-<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jwieczor.tablemenager.AddReservation">
+<AnchorPane prefHeight="553.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jwieczor.tablemenager.AddReservation">
    <children>
-      <MenuBar prefHeight="28.0" prefWidth="600.0">
+      <MenuBar prefHeight="28.0" prefWidth="640.0">
         <menus>
           <Menu mnemonicParsing="false" text="Rezerwacje">
             <items>
@@ -33,16 +33,28 @@
                </items></Menu>
         </menus>
       </MenuBar>
-      <DatePicker layoutX="162.0" layoutY="74.0" />
-      <TextField layoutX="162.0" layoutY="121.0" prefHeight="26.0" prefWidth="186.0" />
-      <Button layoutX="410.0" layoutY="100.0" mnemonicParsing="false" text="Sprawdź dostępność" />
+      <DatePicker fx:id="reservationDate" layoutX="162.0" layoutY="74.0" promptText="MM/DD/RRRR" />
+      <TextField fx:id="numberOfGuests" layoutX="162.0" layoutY="121.0" prefHeight="26.0" prefWidth="186.0" promptText="np: 2" />
+      <Button fx:id="addButt" alignment="CENTER" layoutX="424.0" layoutY="208.0" mnemonicParsing="false" onAction="#addReservation" prefHeight="26.0" prefWidth="160.0" text="DODAJ" />
       <Label alignment="CENTER" layoutX="3.0" layoutY="79.0" prefHeight="17.0" prefWidth="160.0" text="Wybierz date:" />
       <Label alignment="CENTER" contentDisplay="CENTER" layoutX="-1.0" layoutY="126.0" prefHeight="17.0" prefWidth="166.0" text="Ilosc gości:" />
-      <TableView layoutX="155.0" layoutY="180.0" prefHeight="200.0" prefWidth="200.0">
-        <columns>
-          <TableColumn prefWidth="75.0" text="Godzina" />
-          <TableColumn prefWidth="75.0" text="Stolik" />
-        </columns>
-      </TableView>
+      <TextField fx:id="startTime" layoutX="162.0" layoutY="163.0" prefHeight="26.0" prefWidth="186.0" promptText="HH:MM:SS" />
+      <Label alignment="CENTER" layoutX="-2.0" layoutY="168.0" prefHeight="17.0" prefWidth="166.0" text="Godzina:" />
+      <Label alignment="CENTER" layoutX="3.0" layoutY="213.0" prefHeight="17.0" prefWidth="160.0" text="Imie:" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="1.0" layoutY="255.0" prefHeight="17.0" prefWidth="160.0" text="Nazwisko:" />
+      <Label alignment="CENTER" layoutX="4.0" layoutY="302.0" prefHeight="17.0" prefWidth="160.0" text="Numer telefonu:" />
+      <Label alignment="CENTER" layoutX="1.0" layoutY="412.0" prefHeight="17.0" prefWidth="160.0" text="UWAGI:" />
+      <TextField fx:id="guestFirstName" layoutX="162.0" layoutY="208.0" prefHeight="26.0" prefWidth="186.0" promptText="Jan" />
+      <TextField fx:id="guestLastName" layoutX="162.0" layoutY="250.0" prefHeight="26.0" prefWidth="186.0" promptText="Kowalski" />
+      <TextArea fx:id="notesAdd" layoutX="163.0" layoutY="420.0" prefHeight="112.0" prefWidth="314.0" promptText="Bez polskich znakow !" />
+      <TextField fx:id="guestPhoneNumber" layoutX="162.0" layoutY="297.0" prefHeight="26.0" prefWidth="186.0" promptText="123456789" />
+      <Button fx:id="showTableButt" alignment="CENTER" layoutX="424.0" layoutY="143.0" mnemonicParsing="false" onAction="#tableMenuBar" prefHeight="28.0" prefWidth="160.0" text="Pokaz tabelke rezerwacji" AnchorPane.rightAnchor="56.0" />
+      <Label fx:id="infoLabel" alignment="CENTER" layoutX="362.0" layoutY="280.0" prefHeight="51.0" prefWidth="274.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tableId" layoutX="162.0" layoutY="342.0" prefHeight="26.0" prefWidth="186.0" promptText="np: 1" />
+      <Label alignment="CENTER" layoutX="1.0" layoutY="346.0" prefHeight="17.0" prefWidth="160.0" text="Numer stolika:" />
    </children>
 </AnchorPane>
